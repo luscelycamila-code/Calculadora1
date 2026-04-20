@@ -11,7 +11,7 @@ def generar_tabla(expresion):
     for valores in combinaciones:
         contexto = dict(zip(variables, valores))
         try:
-            resultado = eval(expresion, {}, contexto)
+           resultado = int(eval(expresion, {}, contexto))
         except:
             resultado = "Error"
         
